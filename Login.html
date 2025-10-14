@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="shortcut icon" href="logoalert.png" type="image/x-icon">
+  <link rel="stylesheet" href="estilos/style.css">
+  <link rel="stylesheet" href="estilos/media-query.css">
+</head>
+<style>
+    @charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+body, html {
+  background-color: #0b0b0b;
+  height: 100vh;
+  width: 100vw;
+}
+
+main {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+}
+
+
+section#login {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+
+  background: linear-gradient(145deg, #1a1a1a, #2a2a2a);
+  width: 280px;
+  height: 530px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(255, 107, 0, 0.3), 0 0 10px rgba(0, 0, 0, 0.7);
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section#login:hover {
+  transform: translate(-50%, -50%) scale(1.02);
+  box-shadow: 0 0 25px rgba(235, 12, 12, 0.5);
+}
+
+
+section#login > div#imagem {
+  display: block;
+  background: url('../imagens/Login.png') no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  height: 230px;
+}
+
+
+section#login > div#form {
+  display: block;
+  text-align: center;
+  padding: 20px;
+}
+
+#form h1 {
+  color: #ee0e0e;
+  margin-bottom: 10px;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+#form h1:hover {
+  color: #ee0e0e;
+  transition: 0.3s ease;
+}
+
+p {
+  text-align: left;
+  padding: 5px;
+  font-size: 0.9em;
+  color: #ccc;
+}
+
+
+form > div.campo {
+  display: flex;
+  align-items: center;
+  background-color: #111;
+  border: 1px solid #222;
+  height: 42px;
+  border-radius: 8px;
+  margin: 8px 0;
+  transition: all 0.3s ease;
+}
+
+form > div.campo:hover {
+  border: 1px solid #ee0e0e;
+  box-shadow: 0 0 5px rgba(255, 107, 0, 0.4);
+}
+
+div.campo span {
+  color: #ee0e0e;
+  font-size: 1.5em;
+  width: 40px;
+  text-align: center;
+}
+
+div.campo > input {
+  background: transparent;
+  font-size: 1em;
+  color: #fff;
+  width: calc(100% - 60px);
+  height: 100%;
+  border: none;
+  border-radius: 0 8px 8px 0;
+  padding: 5px;
+  outline: none;
+}
+
+div.campo > input::placeholder {
+  color: #999;
+}
+
+
+form > input[type=submit] {
+  display: block;
+  font-size: 1em;
+  width: 100%;
+  height: 42px;
+  background-color: #ee0e0e;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+form > input[type=submit]:hover {
+  background-color: #ee0e0e;
+  box-shadow: 0 0 10px rgba(255, 107, 0, 0.5);
+  transform: scale(1.02);
+}
+
+
+form > a.botao {
+  display: block;
+  text-align: center;
+  font-size: 0.95em;
+  width: 100%;
+  height: 38px;
+  line-height: 38px;
+  background-color: transparent;
+  border: 1px solid #ee0e0e;
+  color: #ee0e0e;
+  border-radius: 8px;
+  text-decoration: none;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+}
+
+form > a.botao:hover {
+  background-color: #ee0e0e;
+  color: #fff;
+  transform: scale(1.03);
+}
+
+form > a.botao > i {
+  font-size: 0.85em;
+  margin-left: 4px;
+}
+</style>
+<body>
+  <main>
+    <section id="login">
+      <div id="imagem"></div>
+      <div id="form">
+        <h1>Login</h1>
+        <p>Seja bem-vindo(a). Faça login para acessar sua conta.</p>
+
+        
+        <form onsubmit="fazerLogin(event)" autocomplete="on">
+          <div class="campo"> 
+            <span class="material-icons">person</span>
+            <input type="email" id="email" placeholder="E-mail" maxlength="30" required>
+          </div>
+
+          <div class="campo">
+            <span class="material-icons">vpn_key</span>
+            <input type="password" id="senha" placeholder="Senha" required minlength="4" maxlength="15">
+          </div>
+
+          <input type="submit" value="Entrar">
+
+          <a href="cadastro.html" class="botao">
+            Cadastro <span class="material-icons">person_add</span>
+          </a>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  
+</body>
+</html>
