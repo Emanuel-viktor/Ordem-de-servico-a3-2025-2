@@ -212,7 +212,7 @@ Linguagem principal usada para desenvolver e executar os testes automatizados.
 
 Esta seção descreve, de forma prática, o fluxo e os passos realizados pelas principais funções do sistema. Útil para desenvolvedores que vão ler ou estender o código.
 
-### 12.1 `cadastrar_cliente()`
+### 11.1 `cadastrar_cliente()`
 1. Exibe o cabeçalho de cadastro no console.  
 2. Solicita ao usuário os campos obrigatórios (nome, tipo de pessoa, CNPJ/CPF) e opcionais (endereço, telefones, observações).  
 3. Monta o endereço completo com rua, número, bairro, cidade e estado.  
@@ -221,19 +221,19 @@ Esta seção descreve, de forma prática, o fluxo e os passos realizados pelas p
 6. Insere o registro na tabela `clientes` do banco SQLite.  
 7. Exibe mensagem de sucesso ao final.
 
-### 12.2 `listar_clientes(retornar=False)`
+### 11.2 `listar_clientes(retornar=False)`
 1. Abre conexão com o banco e busca os clientes (id, nome, documento, endereço, email, telefone, status).  
 2. Se não houver clientes, imprime mensagem informativa.  
 3. Caso haja, imprime uma lista formatada com os dados principais.  
 4. Se `retornar=True`, devolve a lista de linhas para uso por outras funções (ex.: seleção em menus).
 
-### 12.3 `cadastrar_tecnico()`
+### 11.3 `cadastrar_tecnico()`
 1. Solicita campos do técnico: nome, CPF, RG, telefone, email.  
 2. Garante que o nome seja preenchido (campo obrigatório).  
 3. Insere o técnico na tabela `tecnicos` do banco.  
 4. Mostra confirmação de cadastro.
 
-### 12.4 `abrir_os()`
+### 11.4 `abrir_os()`
 1. Mostra lista de clientes disponíveis (consulta à tabela `clientes`) e pede que o usuário selecione um cliente.  
 2. Recupera o `endereco_execucao` automaticamente do cadastro do cliente selecionado.  
 3. Solicita os dados da O.S.: tipo, data de agendamento (padrão: hoje), horário previsto, título e descrição.  
@@ -243,20 +243,20 @@ Esta seção descreve, de forma prática, o fluxo e os passos realizados pelas p
 7. Insere a nova O.S. na tabela `os` com `status` inicial (padrão: "Aberta") e `data_abertura` atual.  
 8. Exibe o número da O.S. criada como confirmação.
 
-### 12.5 `listar_os(retornar=False)`
+### 11.5 `listar_os(retornar=False)`
 1. Faz join entre `os`, `clientes` e `tecnicos` para obter informações legíveis (número, cliente, tipo, data, status, técnico).  
 2. Se não houver O.S., informa ao usuário.  
 3. Caso exista, imprime cada ordem com campos principais.  
 4. Retorna a lista quando `retornar=True` para uso em outras rotinas.
 
-### 12.6 `fechar_os()`
+### 11.6 `fechar_os()`
 1. Lista O.S. existentes e solicita ao usuário o ID da O.S. que deseja encerrar.  
 2. Recupera a `data_abertura` armazenada na O.S. (se houver).  
 3. Calcula `tempo_execucao_min` (diferença entre agora e `data_abertura`, em minutos) quando possível.  
 4. Atualiza o registro da O.S. definindo `status = "Concluída"`, grava `data_encerramento` e `tempo_execucao_min`.  
 5. Persiste a alteração no banco e confirma a operação.
 
-### 12.7 `export_csv_todas_os(path="export_os.csv")`
+### 11.7 `export_csv_todas_os(path="export_os.csv")`
 1. Realiza consulta completa das O.S. com nomes de cliente e técnico (JOIN).  
 2. Abre/Cria o arquivo CSV no caminho informado.  
 3. Escreve a primeira linha com os nomes das colunas (cabeçalho).  
