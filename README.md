@@ -179,26 +179,16 @@ Foco em simplicidade, produtividade e expansão futura.
 
 ---
 
-## 📅 9. Cronograma (Exemplo)
 
-| Etapa | Descrição | Período |
-|------|-----------|---------|
-| Análise | Levantamento de requisitos | Semana 1 |
-| Modelagem | Casos de uso e dados | Semana 2 |
-| Implementação | Desenvolvimento | Semanas 3–5 |
-| Testes | Validação | Semana 6 |
-| Entrega | Apresentação final | Semana 7 |
 
----
-
-## 👨‍💻 10. Autores
+## 👨‍💻 9. Autores
 
 Projeto acadêmico — Engenharia de Software  
 **Aluno responsável pela compilação:** *Emanuel Viktor*
 
 ---
 
-## 🧪 11. Planos de Teste
+## 🧪 10. Planos de Teste
 
 ### Ferramenta Utilizada:
 | Ferramenta | Finalidade |
@@ -206,8 +196,9 @@ Projeto acadêmico — Engenharia de Software
 | **pytest** | Execução de testes automatizados unitários e funcionais |
 
 ### Comando para execução:
-```bash
+``bash
 pytest -v
+
 ## 🛠 Tecnologias Utilizadas
 
 ### **Python**
