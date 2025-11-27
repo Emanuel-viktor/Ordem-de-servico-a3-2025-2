@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sistema de Gestão de Clientes e O.S.</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background: #0f1724;
+        color: #e6eef6;
+        line-height: 1.6;
+    }
+
+    header {
+        background: #0b1220;
+        padding: 30px 20px;
+        text-align: center;
+        box-shadow: 0px 2px 10px #00000045;
+    }
+
+    header h1 {
+        margin: 0;
+        font-size: 32px;
+        color: #16f1d1;
+    }
+
+    .container {
+        width: 90%;
+        max-width: 900px;
+        margin: 30px auto;
+    }
+
+    h2 {
+        color: #16f1d1;
+        margin-bottom: 10px;
+        border-left: 5px solid #16f1d1;
+        padding-left: 10px;
+    }
+
+    a {
+        color: #16c4bd;
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    .team-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 10px;
+    }
+
+    .team-table th, .team-table td {
+        border: 1px solid #1f2937;
+        padding: 10px;
+        text-align: left;
+    }
+
+    .team-table th {
+        background: #16f1d1;
+        color: #000;
+    }
+
+    .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        margin-top: 15px;
+    }
+
+    .gallery div {
+        width: 300px;
+    }
+
+    .gallery img {
+        width: 100%;
+        border-radius: 8px;
+        border: 1px solid #ccc;
+    }
+
+    footer {
+        margin-top: 40px;
+        background: #0b1220;
+        padding: 20px;
+        text-align: center;
+        font-size: 14px;
+        color: #7b8ca6;
+    }
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Sistema de Gestão de Clientes e Ordens de Serviço</h1>
+    <p>Projeto acadêmico — Engenharia de Software</p>
+</header>
+
+<div class="container">
+
+    <!-- OBJETIVO -->
+    <section>
+        <h2>🎯 Objetivo do Projeto</h2>
+        <p>
+            Desenvolver um sistema para cadastro de clientes, técnicos e gerenciamento completo de Ordens de Serviço,
+            incluindo abertura, atualização de status, checklist, relatório e histórico.
+        </p>
+    </section>
+
+    <!-- PITCH -->
+    <section id="pitch">
+        <h2>🎥 Pitch do Projeto (5 minutos)</h2>
+        <p>Assista ao pitch completo no link abaixo:</p>
+
+        <!-- COLOQUE O LINK DO VÍDEO AQUI -->
+        <p>
+            <a href="#" target="_blank" id="pitch-link">Clique aqui para assistir ao Pitch</a>
+        </p>
+
+    </section>
+
+    <!-- TECNOLOGIAS -->
+    <section>
+        <h2>🛠 Tecnologias Utilizadas</h2>
+        <ul>
+            <li>Python 3</li>
+            <li>SQLite (banco local)</li>
+            <li>pytest (testes automatizados)</li>
+            <li>GitHub + Git</li>
+        </ul>
+    </section>
+
+    <!-- PRINTS -->
+    <section id="prints">
+    <h2>Capturas de Tela do Sistema</h2>
+    <p>Abaixo estão as prints do funcionamento do sistema:</p>
+
+    <div class="gallery">
+        <div>
+            <img src="imagens/TelaPrincipal.png" alt="Tela principal">
+            <p>Tela principal</p>
+        </div>
+        <div>
+            <img src="imagens/print1.png" alt="Tela 1">
+            <p>Tela do Sistema 1</p>
+        </div>
+
+        <div>
+            <img src="imagens/print2.png" alt="Tela 2">
+            <p>Tela do Sistema 2</p>
+        </div>
+
+        <div>
+            <img src="imagens/print3.png" alt="Tela 3">
+            <p>PDF gerado</p>
+        </div>
+        div>
+            <img src="imagens/Teste.png" alt="Teste">
+            <p>Teste</p>
+        </div>
+    </div>
+</section>
+
+    <!-- LINKS -->
+    <section>
+        <h2>🔗 Repositório do Projeto</h2>
+        <p>
+            <a href="https://github.com/Emanuel-viktor/Ordem-de-servico-a3-2025-2/tree/main" target="_blank">
+                ➜ Acessar o repositório no GitHub
+            </a>
+        </p>
+    </section>
+
+    <!-- EQUIPE -->
+    <section>
+        <h2>👥 Integrantes do Projeto</h2>
+
+        <table class="team-table">
+            <tr>
+                <th>Nome</th>
+                <th>RA</th>
+            </tr>
+            <tr><td>Maiquel Brassiani</td><td>13623110385</td></tr>
+            <tr><td>João Victor Gabriel Rodrigues de Lima</td><td>1362312519</td></tr>
+            <tr><td>Roberto Carlos da Silva Figueiredo</td><td>1362318889</td></tr>
+            <tr><td>Emanuel Viktor de Souza Bezerra</td><td>1362416509</td></tr>
+            <tr><td>Tiago Anderson Fernandes Filho</td><td>1362314424</td></tr>
+            <tr><td>João Pedro Firmo Lira da Costa</td><td>1362316447</td></tr>
+        </table>
+
+    </section>
+
+</div>
+
+<footer>
+    Desenvolvido para fins acadêmicos — 2025  
+</footer>
+
+</body>
+</html>
