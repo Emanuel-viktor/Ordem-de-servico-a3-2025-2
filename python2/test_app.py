@@ -1,7 +1,7 @@
 import os
 import sqlite3
 import pytest
-from app import get_conn, init_db, DB_FILE
+from gui_gestao_com_excluir import get_conn, init_db, DB_FILE
 
 
 
