@@ -6,10 +6,8 @@ import time
 
 # ==== Permite acessar arquivos mesmo se virar EXE ====
 def resource_path(rel_path):
-    if getattr(sys, 'frozen', False):
-        return os.path.join(sys._MEIPASS, rel_path)
-    return os.path.join(os.path.abspath("."), rel_path)
-
+    base_path = os.path.dirname(os.path.abspath(__file__))
+    return os.path.join(base_path, rel_path)
 
 # ==== SPLASH SCREEN ====
 def show_splash(duration=1.6):

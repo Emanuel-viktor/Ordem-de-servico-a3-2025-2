@@ -18,7 +18,7 @@ import csv
 import os
 from reportlab.pdfgen import canvas
 from reportlab.lib.pagesizes import A4
-
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 # Tentativa de carregar Pillow (opcional, se não existir a logo será ignorada)
 try:
@@ -125,7 +125,7 @@ class App(tk.Tk):
         init_db()
 
         # Caminho da logo
-        self._logo_path = "WhatsApp Image 2025-10-16 at 10.13.19.jpeg"
+        self._logo_path = os.path.join(BASE_DIR, "WhatsApp Image 2025-10-16 at 10.13.19.jpeg")
         self.logo_img = None
         self._load_logo_if_available()
 

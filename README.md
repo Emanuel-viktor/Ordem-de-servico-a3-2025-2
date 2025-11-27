@@ -199,7 +199,7 @@ Projeto acadêmico — Engenharia de Software
 
 ### Comando para execução:
 ``bash
-pytest -v
+python -m pytest -v
 
 ## 🛠 Tecnologias Utilizadas
 
