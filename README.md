@@ -265,6 +265,46 @@ Esta seção descreve, de forma prática, o fluxo e os passos realizados pelas p
 
 ---
 
+# 📏 12. Métricas e Estimativas
+
+Esta seção apresenta as métricas e a técnica de estimativa utilizadas para o planejamento e acompanhamento do desenvolvimento do Sistema de Gestão de Clientes e Ordens de Serviço.
+
+---
+
+## **12.1 Métrica 1 — Produtividade do Desenvolvimento (LOC/hora)**  
+A métrica de produtividade mede quantas linhas de código são produzidas por hora, permitindo acompanhar o ritmo do desenvolvimento.
+
+**Aplicação no projeto:**  
+Durante a implementação da função **abrir_os()**, foram desenvolvidas cerca de 150 linhas de código em 4 horas de trabalho, resultando em:
+
+**➡️ Produtividade média: 37,5 LOC/h**
+
+---
+
+## **12.2 Métrica 2 — Taxa de Defeitos (bugs por funcionalidade)**  
+A Taxa de Defeitos mede a qualidade do software com base na quantidade de erros encontrados durante os testes.
+
+**Aplicação no projeto:**  
+Na primeira bateria de testes com **pytest**, foram registrados 4 defeitos em 2 funcionalidades principais (cadastro e listagem), resultando em:
+
+**➡️ Taxa de defeitos: 2 bugs por funcionalidade**
+
+---
+
+## **12.3 Técnica de Estimativa — Planning Poker**  
+O Planning Poker utiliza a sequência de Fibonacci (1, 2, 3, 5, 8, 13…) para estimar o esforço e complexidade das tarefas, considerando riscos e incertezas.
+
+**Aplicação no projeto:**  
+Para a funcionalidade **fechar_os()**, que envolve cálculos, validações e atualização de status:
+
+- Estimativas sugeridas pelos membros: **3, 5 e 8 pontos**  
+- Após discussão técnica:
+
+**➡️ Estimativa final definida: 5 pontos**
+
+---
+
+
 ### Dica rápida para leitura do código
 - As funções seguem o padrão: abrir conexão → executar SELECT/INSERT/UPDATE → commit → fechar conexão.  
 - Funções que imprimem listas normalmente têm a opção `retornar=True` para obter os dados e reutilizá-los em outros fluxos (por exemplo, seleção de ID no menu).  
