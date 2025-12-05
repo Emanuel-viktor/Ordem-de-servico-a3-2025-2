@@ -24,6 +24,8 @@
 🌐 GitHub Pages
 https://emanuel-viktor.github.io/Ordem-de-servico-a3-2025-2/
 
+Link do video Pitch:https://drive.google.com/file/d/1rljOk_hMYp35EAl5S9mqUL1hHamyeNpd/view?usp=drivesdk 
+
 ## 📘 1. Introdução
 
 ### 1.1 Propósito  
